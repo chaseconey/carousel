@@ -11,14 +11,16 @@
 |
 */
 
-Route::get('/', function()
-{
-    $someString = 'Chase is da best';
+// Individual Routes
+Route::get('/', 'IndexController@index');
 
-	return View::make('home.index')
-        ->with('string', $someString);
-});
+// RESTful Controller Routing
+Route::controller('tweets', 'TweetsController');
 
+// Resourceful Controller Routing
+Route::resource('cars', 'CarsController');
+
+// Callback Function Routing
 Route::get('users', function() {
     return [
         [
