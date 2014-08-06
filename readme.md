@@ -22,3 +22,4 @@ Lunch and learn presentation to team on Laravel and how awesome it really is
 * **Step 5:** 4 ways of Routing, 3 Different Kinds of Controllers
 * **Step 6:** Migration complete. Should now be able to run `php artisan migrate`.
 * **Step 7:** Database Seeding complete. Should now be able to run `php artisan db:seed`.
+* **Step 8:** User Model implemented. Full MVC stack has been explored.
