@@ -11,17 +11,9 @@
 |
 */
 
-// Individual Routes
-Route::get('/', 'IndexController@index');
-
-// RESTful Controller Routing
-Route::controller('tweets', 'TweetsController');
-
-// Resourceful Controller Routing
-Route::resource('cars', 'CarsController');
-
 // Callback Function Routing
 Route::get('users', function() {
+    // Let's try and replicate this from the database...
     return [
         [
             'name' => 'Chase Coney',
