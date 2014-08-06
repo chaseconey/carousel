@@ -13,5 +13,28 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return 'hey';
+});
+
+Route::get('users', function() {
+    return [
+        [
+            'name' => 'Chase Coney',
+            'occupation' => 'Software Developer',
+            'email' => 'chase.coney@creditcards.com',
+            'age' => 25
+        ],
+        [
+            'name' => 'John Doe',
+            'occupation' => 'CEO of Apple',
+            'email' => 'john.doe@creditcards.com',
+            'age' => 105
+        ],
+        [
+            'name' => 'Jane Doe',
+            'occupation' => 'Gold Digger',
+            'email' => 'jane.doe@creditcards.com',
+            'age' => 22
+        ]
+    ];
 });
