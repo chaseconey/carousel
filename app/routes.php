@@ -11,10 +11,4 @@
 |
 */
 
-// Callback Function Routing
-Route::get('users', function() {
-
-    // Let's try and replicate this from the database...
-    return User::all();
-
-});
+Route::resource('users', 'UsersController');
