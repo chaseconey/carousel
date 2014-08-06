@@ -13,25 +13,8 @@
 
 // Callback Function Routing
 Route::get('users', function() {
+
     // Let's try and replicate this from the database...
-    return [
-        [
-            'name' => 'Chase Coney',
-            'occupation' => 'Software Developer',
-            'email' => 'chase.coney@creditcards.com',
-            'age' => 25
-        ],
-        [
-            'name' => 'John Doe',
-            'occupation' => 'CEO of Apple',
-            'email' => 'john.doe@creditcards.com',
-            'age' => 105
-        ],
-        [
-            'name' => 'Jane Doe',
-            'occupation' => 'Gold Digger',
-            'email' => 'jane.doe@creditcards.com',
-            'age' => 22
-        ]
-    ];
+    return User::all();
+
 });
