@@ -13,7 +13,10 @@
 
 Route::get('/', function()
 {
-	return View::make('home.index');
+    $someString = 'Chase is da best';
+
+	return View::make('home.index')
+        ->with('string', $someString);
 });
 
 Route::get('users', function() {
