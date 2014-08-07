@@ -12,11 +12,11 @@
     <h1>Users Page</h1>
 
     <ul>
-      <?php foreach($users as $user): ?>
+      @foreach($users as $user)
 
-      <li><?= $user->name ?></li>
+      <li>{{ $user->name }}</li>
 
-      <?php endforeach; ?>
+      @endforeach
     </ul>
 
 </body>
