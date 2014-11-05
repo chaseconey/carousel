@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Carousels Are For Winners</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"/>
 </head>
 <body>
 

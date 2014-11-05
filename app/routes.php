@@ -11,4 +11,7 @@
 |
 */
 
+Route::get('/', function() {
+	return View::make('home.index');
+});
 Route::resource('users', 'UsersController');

@@ -4,10 +4,19 @@
 @section('content')
 
 <h1>Users Page</h1>
-<ul>
+
+<div id="users">
   @foreach($users as $user)
-	<li>{{ $user->name }}</li>
+	<div class="row">
+		<div class="col-md-12">
+			<h3>{{ $user->name }}</h3>
+
+			<div class="posts">
+				@include('users.partials.posts', ['posts' => $user->posts])
+			</div>
+		</div>
+	</div>
   @endforeach
-</ul>
+</div>
 
 @stop

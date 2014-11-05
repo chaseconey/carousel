@@ -28,3 +28,4 @@ Lunch and learn presentation to team on Laravel and how awesome it really is
 * **Step 11:** Add Posts model and show Eloquent relationships (look in routes.php)
 * **Step 12:** Show tons of Eloquent features in routes.php
 * **Step 13:** Add master layout. User index page inherits from master. Use include for nav
+* **Step 14:** Pull in bootstrap. Use partials to generate a list of posts per user.
