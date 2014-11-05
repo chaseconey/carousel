@@ -26,3 +26,4 @@ Lunch and learn presentation to team on Laravel and how awesome it really is
 * **Step 9:** Put it all together - Route -> Controller -> View (with Model Data).
 * **Step 10:** Convert php view into Blade view.
 * **Step 11:** Add Posts model and show Eloquent relationships (look in routes.php)
+* **Step 12:** Show tons of Eloquent features in routes.php

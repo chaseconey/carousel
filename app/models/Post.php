@@ -15,4 +15,8 @@ class Post extends \Eloquent {
 		return $this->belongsTo('User', 'user_id');
 	}
 
+	public function scopeToday($query) {
+		return $query->where('created_at', '>=', \Carbon\Carbon::today());
+	}
+
 }
