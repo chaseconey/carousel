@@ -12,3 +12,16 @@
 */
 
 Route::resource('users', 'UsersController');
+
+Route::get('/', function() {
+
+	// Get a user's posts
+	$user = User::find(1);
+	return $user->posts;
+
+	// Get a post's author (user)
+//	$post = Post::find(2);
+//	return $post->author;
+
+
+});

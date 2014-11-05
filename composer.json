@@ -6,6 +6,12 @@
 	"require": {
 		"laravel/framework": "4.2.*"
 	},
+	"require-dev": {
+		"way/generators": "~2.0",
+		"barryvdh/laravel-ide-helper": "1.*",
+		"itsgoingd/clockwork": "1.*",
+		"fzaninotto/faker": "v1.3.0"
+	},
 	"autoload": {
 		"classmap": [
 			"app/commands",
@@ -23,6 +29,7 @@
 		],
 		"post-update-cmd": [
 			"php artisan clear-compiled",
+			"php artisan ide-helper:generate",
 			"php artisan optimize"
 		],
 		"post-create-project-cmd": [
